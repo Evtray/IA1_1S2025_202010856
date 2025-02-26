@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HT1 202010856</title>
+  <script src="prolog.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>HT1 202010856</h1>
+    </header>
+    <section class="content">
+      <div class="file-upload">
+        <label for="fileInput">Cargar archivo de base de conocimientos (Prolog)</label>
+        <input type="file" id="fileInput" accept=".pl">
+      </div>
+      <div class="query-section">
+        <input type="text" id="queryInput" placeholder="Ingrese la consulta">
+        <button id="queryButton" onclick="runQuery()">Consultar</button>
+      </div>
+      <textarea id="output" cols="50" rows="10" readonly></textarea>
+      <div class="echo-section">
+        <h2>Agregar nuevo echo</h2>
+        <input type="text" id="echoInput" placeholder="Ingrese el echo">
+        <button id="echoButton" onclick="addEcho()">Agregar</button>
+      </div>
+      <div class="download-section">
+        <a id="download" download="base.pl" href="">Descargar base de conocimiento</a>
+      </div>
+    </section>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
